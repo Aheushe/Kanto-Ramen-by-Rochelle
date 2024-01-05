@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kanto Ramen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .side_bar{
+      width: 250px;
+      top: 20%;
+      height: 100%;
+      left: -100%;
+      padding: 30px 15px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+    }
+    body{
+      background-image: url("lo.jpg");
+      background-repeat: no repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="place_.jpg">PLACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="active"><a href="menu.html">MENU</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="review.html">REVIEWS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="w3-container w3-padding-32 w3-center">
+    <div class="w3-padding-32">
+      <h3 style="font-family: courier new; font-size: 25px; text-align: center;"><b>Hope you could dine with us soon!</b></h3>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px;margin-bottom: 0px;">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="menchi katsu.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Menchi Katsu</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">It has a ground meat patty that is coated in breadcrumbs and deep-fried to perfection. As a result, the exterior becomes crispy and gives way to a juicy, tasty interior. For those who enjoy a filling and substantial dish, Menchi Katsu is a must-try due to its savory flavor and harmonious textural balance. The sauce has a balancing sweet and sour flavour.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="tori karaage.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Tori Karaage</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">A Japanese fried chicken, or Tori Karaage, is a crispy, delicious treat. It is fried till golden brown and coated with a thin batter. It is bite-sized, soft bits of paradise with a crunchy exterior. For an added taste boost, serve it with a side of zesty dipping sauce or a squeeze of lemon.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="tori katsu.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Tori Katsu</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">A cousin of the well-known Tonkatsu, Tori Katsu is made of deep-fried, breaded chicken cutlets. A pleasant bite is produced by the lovely contrast between the crispy coating and the soft chicken. To add even more savory pleasure, the dish is frequently served with a tonkatsu sauce or a spicy mustard for dipping.</p>
+    </div>
+  </div>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="tonkatsu.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Tonkatsu</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">A pork cutlets coated in flour and deep-fried is the centerpiece of the traditional Japanese meal tonkatsu. Usually thick and juicy, the golden-brown breadcrumb covering gives a delicious crunch to the pork. This dish is tasty and comforting, especially when served with shredded cabbage on the side.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="sweet chili wings.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Sweet Chili Wings</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">A delightful combination of sweet and spicy flavors can be experienced in Sweet Chili Wings. The sticky, delicious sweet chili sauce that coats the crispy wings creates the ideal balance of flavors. For those who prefer a little of sweetness with a kick, these wings are an addicting delicacy.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="ika furai.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Ika Furai</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">Squid with breading and deep-frying is called ika furai, and it's a delicious seafood dish with a satisfying crunch. A mouthwatering contrast of sensations is created by the soft squid inside the crispy coating. Ika Furai is a delicious and entertaining dish that is best enjoyed with a side of creamy sauce</p>
+    </div>
+  </div>
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="tonkotsu ramen.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Tonkotsu Ramen</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">Rich and satisfying, Tonkotsu Ramen is a noodle soup with a creamy broth simmered for a long time over simmered pork bones. The outcome is a rich, powerful soup that tastes well with ramen noodles, tender pork belly slices, boiled egg, and other toppings. My favourite part of eating Tonkotsu Ramen is the tenderness and juicyness of pork. This meal is a favored comfort food that makes you feel warm within.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="spicy pork ramen.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Spicy Pork Ramen</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">Try the Spicy Pork Ramen to bring life up your ramen experience. The traditional components of ramen, such as the chewy noodles and aromatic broth, are highlighted with a hint of spice in this bowl. The tender pork pieces provide a filling protein source, making this bowl of ramen lively and pleasant at the same time.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="creamy chicken ramen.jpg" class="img-responsive" style="width:100%," style="height: 100%" alt="Image">
+      <h3>Creamy Chicken Ramen</h3>
+      <p style="font-family: courier new; font-size: 17px; text-align: center;
+      font-weight: bold;">A change from the conventional transparent broths is provided by Creamy Chicken Ramen. This version has a rich, creamy broth that is frequently made with chicken and occasionally has a hint of cream or butter. What's left is a hearty and satisfying bowl of ramen that will appeal to individuals seeking a more complex flavor.</p>
+    </div>
+  </div>
+</div><br><br><br><br><br><br>
+</div></div></body>
+<footer class="container-fluid text-center" style="width: 130%; margin-left: -15%;">
+  <p>Copyright © 2023<br> All rights reserved <br> Designed By: Rochelle L. Manggol</p>
+</footer>
+</html>

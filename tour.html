@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kanto Ramen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 450px;
+    }
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+        image: fixed;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+    <li><a href="index.html" style="color: white; font-size: 20px;">←</a></li>
+</div>
+</nav>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="inside.jpg" style="width:100%" onclick="onClick(this)" alt="Sneek Peek">
+      <img src="__.jpg" style="width:100%" onclick="onClick(this)" alt="When Time Stops">
+      <img src="menu_.jpg" style="width:100%" onclick="onClick(this)" alt="Choose What Makes You Happy">
+   </div>
+
+   <div class="w3-quarter">
+      <img src="pl.jpg" style="width:100%" onclick="onClick(this)" alt="Right Here Waiting">
+      <img src="lamp.jpg" style="width:100%" onclick="onClick(this)" alt="Peace Within">
+      <img src="n.jpg" style="width:100%" onclick="onClick(this)" alt="Delicacies">
+      <img src="tori.jpg" style="width:100%" onclick="onClick(this)" alt="Delicacies">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="pla.jpg" style="width:100%" onclick="onClick(this)" alt="Just Here, Just In">
+      <img src="food.jpeg" style="width:100%" onclick="onClick(this)" alt="Dine Out">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="other.jpeg" style="width:100%" onclick="onClick(this)" alt="Enjoying the Moment">
+      <img src="oth_.jpeg" style="width:100%" onclick="onClick(this)" alt="Chillin' In The Night">
+      <img src="tonkatsu_.jpg" style="width:100%" onclick="onClick(this)" alt="Selected">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+<br><br><br><br><br><br>
+
+</body>
+<footer class="container-fluid text-center">
+  <p>Copyright © 2023<br> All rights reserved <br> Designed By: Rochelle L. Manggol</p>
+</footer>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Frequently Asked Questions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .accordion button ol {
+      list-style: arranged;
+      margin: 0;
+      padding: 0;
+    }
+    .card-header{
+      padding: 5px;
+    }
+    .card-body{
+      padding: 0;
+      margin-left: 5px;
+    }
+    body{
+      background-image: url("logs.jpg");
+      background-repeat: no repeat;
+      background-size: cover;
+      background-image: fixed;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="place_.jpg">PLACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="faqs.html">FAQs</a></li>
+        <li><a href="review.html">REVIEWS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <h1 class="text-center">Frequently Asked Questions</h1>
+    <div class="accordion" id="accordionFAQ">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <ol>
+              <h8>1. Why is Kanto Ramen sometimes closed even though it is indicated in the schedule that it should be open at that day and time?</h8>
+              </ol>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse
+
+        " aria-labelledby="headingOne" data-parent="#accordionFAQ">
+          <div class="card-body">
+            Ingredients and other equipments like chopsticks are currently not available at that time as we are ordering it.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <ol>
+              <h8>2. Are the ingredients fresh before serving?</h8>
+              </ol>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+          <div class="card-body">
+            Yes, we are strict when it comes to freshness of the ingredients. We are making sure that it will serve fresh to the customer.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <ol>
+              <h8>3. Do you make deliveries?</h8>
+              </ol>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+          <div class="card-body">
+            As of now, we cannot make nor accept delivery orders as we are out of manpower and cannot hire somebody.
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+<footer class="container-fluid text-center">
+  <p>Copyright © 2023<br> All rights reserved <br> Designed By: Rochelle L. Manggol</p>
+</footer>
+
+</body>
+</html>
